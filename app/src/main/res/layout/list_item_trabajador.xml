@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C6C6C6"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/activityInsertLl"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/bt_redondo"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/user"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"  />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/litNombreAux"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activityInsertLl"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/nombre" />
+
+    <TextView
+        android:id="@+id/litNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/litNombreAux"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/litPuestoAux"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/litNombreAux"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/puesto" />
+
+    <TextView
+        android:id="@+id/litPuesto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/litNombreAux"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/litAntiguedadAux"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/litPuestoAux"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/antiguedad" />
+
+    <TextView
+        android:id="@+id/litAntiguedad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/litNombreAux"
+        android:textColor="@color/black" />
+
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity"
+    android:background="#FFFFFF"
+    >
+
+    <ImageView
+    android:layout_marginTop="120dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        tools:context=".MainActivity"
+        android:background="#FFFFFF">
+
+
+
+        <Button
+
+            android:id="@+id/mainActivityBtTodoTrabajadores"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/ver_trabajadores"
+            android:background="@drawable/bt_redondo"
+            android:fontFamily="sans-serif-black"/>
+        <Button
+            android:id="@+id/mainActivityBtInsertarTrabajador"
+            android:layout_width="300dp"
+            android:background="@drawable/bt_redondo"
+            android:layout_marginTop="2dp"
+            android:layout_height="wrap_content"
+            android:text="@string/insertar_trabajador"
+            android:fontFamily="sans-serif-black"/>
+
+        <Button
+            android:id="@+id/mainActivityBtBorrarTrabajadores"
+            android:layout_width="300dp"
+            android:background="@drawable/bt_redondo"
+            android:layout_marginTop="2dp"
+            android:layout_height="wrap_content"
+            android:text="@string/borrar_lista_de_trabajadores"
+            android:gravity="center"
+            android:fontFamily="sans-serif-black"/>
+
+        <EditText
+            android:layout_marginTop="9dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/introduce_el_nombre_a_buscar"
+            android:fontFamily="sans-serif-black"/>
+
+        <Button
+            android:id="@+id/mainActivityBtBuscar"
+            android:layout_width="170dp"
+            android:background="@drawable/bt_redondo"
+            android:layout_marginTop="2dp"
+            android:layout_height="wrap_content"
+            android:text="@string/buscar_por_nombre"
+            android:fontFamily="sans-serif-black"/>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+

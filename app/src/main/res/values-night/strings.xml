@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ACIVITY MAIN -->
+    <string name="app_name">TrabajadoresRoom</string>
+    <string name="ver_trabajadores">VER TRABAJADORES</string>
+    <string name="insertar_trabajador">INSERTAR TRABAJADOR</string>
+    <string name="borrar_lista_de_trabajadores">BORRAR LISTA DE TRABAJADORES</string>
+    <string name="introduce_el_nombre_a_buscar">Introduce el nombre a buscar</string>
+    <string name="buscar_por_nombre">BUSCAR POR NOMBRE</string>
+
+    <!-- ACTIVITY INSERT EDIT. -->
+    <string name="nombre">Nombre:</string>
+    <string name="puesto">Puesto:</string>
+    <string name="antiguedad">Antiguedad:</string>
+    <string name="guardar">GUARDAR</string>
+    <string name="borrar">borrar</string>
+    <string name="introduce_el_nombre">Introduce el nombre</string>
+</resources>
