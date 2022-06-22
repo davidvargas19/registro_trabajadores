@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         mainActivityBtBuscar.setOnClickListener {
-            var nombre = mainActivityBtBuscar.text.toString()
+            var nombre = mainActivityHintBuscar.text.toString()
             var trabajador =
                 TrabajadorDB.getDatabase(applicationContext).trabajadorD().getWorkerByName(nombre)
             if (trabajador == null) {
