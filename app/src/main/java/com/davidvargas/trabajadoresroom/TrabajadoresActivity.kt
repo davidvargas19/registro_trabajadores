@@ -24,6 +24,7 @@ class TrabajadoresActivity : AppCompatActivity(), TrabajadorAdapter.OnTrabajador
         binding.litBtBuscar.setOnClickListener {
             buscar()
         }
+//
 //        binding.litHintBuscar.editableText.addTextChangedListener(TextWatcher()
 
 
