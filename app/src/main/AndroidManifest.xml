@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".InsertEditActivity" />
-        <activity android:name=".data.TrabajadoresActivity"></activity>
+        <activity android:name=".TrabajadoresActivity"></activity>
     </application>
 
 </manifest>

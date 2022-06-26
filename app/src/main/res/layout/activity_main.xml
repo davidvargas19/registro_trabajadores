@@ -1,82 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    tools:context=".MainActivity"
     android:background="#FFFFFF"
-    >
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
     <ImageView
-    android:layout_marginTop="120dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
         android:background="@drawable/img" />
-
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
+        android:background="#FFFFFF"
         android:gravity="center"
-        tools:context=".MainActivity"
-        android:background="#FFFFFF">
-
-
+        android:orientation="vertical"
+        tools:context=".MainActivity">
 
         <Button
-
             android:id="@+id/mainActivityBtTodoTrabajadores"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:text="@string/ver_trabajadores"
-            android:background="@drawable/bt_redondo"
-            android:fontFamily="sans-serif-black"/>
+            android:background="@drawable/button_ripple"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/ver_trabajadores" />
+
         <Button
             android:id="@+id/mainActivityBtInsertarTrabajador"
             android:layout_width="300dp"
-            android:background="@drawable/bt_redondo"
-            android:layout_marginTop="2dp"
             android:layout_height="wrap_content"
-            android:text="@string/insertar_trabajador"
-            android:fontFamily="sans-serif-black"/>
+            android:layout_marginTop="2dp"
+            android:background="@drawable/button_ripple"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/insertar_trabajador" />
 
         <Button
             android:id="@+id/mainActivityBtBorrarTrabajadores"
             android:layout_width="300dp"
-            android:background="@drawable/bt_redondo"
-            android:layout_marginTop="2dp"
             android:layout_height="wrap_content"
-            android:text="@string/borrar_lista_de_trabajadores"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/button_ripple"
+            android:fontFamily="sans-serif-black"
             android:gravity="center"
-            android:fontFamily="sans-serif-black"/>
-
-        <EditText
-            android:id="@+id/mainActivityHintBuscar"
-            android:layout_marginTop="9dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:hint="@string/introduce_el_nombre_a_buscar"
-            android:fontFamily="sans-serif-black"/>
-
-        <Button
-            android:id="@+id/mainActivityBtBuscar"
-            android:layout_width="170dp"
-            android:background="@drawable/bt_redondo"
-            android:layout_marginTop="2dp"
-            android:layout_height="wrap_content"
-            android:text="@string/buscar_por_nombre"
-            android:fontFamily="sans-serif-black"/>
-
-
-
+            android:text="@string/borrar_lista_de_trabajadores" />
 
     </LinearLayout>
-
 
 </LinearLayout>
 

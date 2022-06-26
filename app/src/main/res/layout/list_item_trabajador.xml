@@ -1,76 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/litLinearLayout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/bt_empleados"
-    android:padding="16dp"
-    android:orientation="vertical">
-
-    <LinearLayout
-        android:layout_marginLeft="130dp"
-        android:id="@+id/activityInsertLl"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:gravity="center"
-        android:background="@drawable/bt_redondo"
-        android:orientation="vertical">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/user"
-            android:fontFamily="sans-serif-black"
-            android:gravity="center"  />
-
-    </LinearLayout>
+    android:background="?attr/selectableItemBackground"
+    android:orientation="vertical"
+    android:paddingHorizontal="16dp"
+    android:paddingTop="16dp">
 
     <TextView
         android:id="@+id/litNombreAux"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/activityInsertLl"
-        android:layout_marginTop="50dp"
         android:fontFamily="sans-serif-black"
-        android:text="@string/nombre" />
+        android:text="@string/nombre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/litNombre"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/litNombreAux"
-        android:textColor="@color/black" />
+        android:layout_marginStart="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/litNombreAux"
+        app:layout_constraintTop_toTopOf="@id/litNombreAux"
+        tools:text="David Vargas" />
 
     <TextView
         android:id="@+id/litPuestoAux"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/litNombre"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="sans-serif-black"
-        android:text="@string/puesto" />
+        android:text="@string/puesto"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/litNombreAux" />
 
     <TextView
         android:id="@+id/litPuesto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/litPuestoAux"
-        android:textColor="@color/black" />
+        android:layout_marginStart="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/litPuestoAux"
+        app:layout_constraintTop_toTopOf="@id/litPuestoAux"
+        tools:text="Secretario" />
 
     <TextView
         android:id="@+id/litAntiguedadAux"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/litPuesto"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="16dp"
         android:fontFamily="sans-serif-black"
-        android:text="@string/antiguedad" />
+        android:text="@string/antiguedad"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/litPuestoAux" />
 
     <TextView
         android:id="@+id/litAntiguedad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/litAntiguedadAux"
-        android:textColor="@color/black" />
+        android:layout_marginStart="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toEndOf="@id/litAntiguedadAux"
+        app:layout_constraintTop_toTopOf="@id/litAntiguedadAux"
+        tools:text="15" />
 
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@color/black_50"
+        app:layout_constraintTop_toBottomOf="@id/litAntiguedadAux"
+        android:layout_marginTop="16dp"/>
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

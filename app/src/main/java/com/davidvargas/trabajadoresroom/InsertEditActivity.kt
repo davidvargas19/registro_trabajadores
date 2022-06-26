@@ -17,7 +17,6 @@ class InsertEditActivity : AppCompatActivity() {
 
         if (nuevoTrabajador.equals(Constants.SI)) {
 
-
         } else {
             trabajador.id = intent.getIntExtra(Constants.ID, 0)
             trabajador.name = intent.getStringExtra(Constants.NOMBRE)
@@ -30,10 +29,8 @@ class InsertEditActivity : AppCompatActivity() {
 
         activityInsertBtborrar.setOnClickListener {
             if (nuevoTrabajador.equals(Constants.SI)) {
-
             } else {
-
-                TrabajadorDB.getDatabase(applicationContext).trabajadorD().deleteWorker(trabajador)
+                TrabajadorDB.getDatabase(applicationContext).trabajadorDao().deleteWorker(trabajador)
                 finish()
             }
 
@@ -49,13 +46,15 @@ class InsertEditActivity : AppCompatActivity() {
             )
 
             if (nuevoTrabajador.equals(Constants.SI)) {
-                TrabajadorDB.getDatabase(applicationContext).trabajadorD()
+                TrabajadorDB.getDatabase(applicationContext).trabajadorDao()
                     .insertTrabajador(trabajadorGuardar)
                 finish()
 
             } else {
-
-
+                trabajadorGuardar.id = trabajador.id
+                TrabajadorDB.getDatabase(applicationContext).trabajadorDao()
+                    .updateWorker(trabajadorGuardar)
+                finish()
             }
         }
     }

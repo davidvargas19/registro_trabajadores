@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".InsertEditActivity">
 
-
     <LinearLayout
         android:id="@+id/activityInsertLl"
         android:layout_width="match_parent"
@@ -22,9 +21,9 @@
 
         <EditText
             android:id="@+id/activityInsertHintNombre"
-            android:hint="@string/introduce_el_nombre"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:hint="@string/introduce_el_nombre" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -34,10 +33,9 @@
 
         <EditText
             android:id="@+id/activityInsertHintPuesto"
-            android:hint="@string/introduce_el_puesto"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
+            android:layout_height="wrap_content"
+            android:hint="@string/introduce_el_puesto" />
 
         <TextView
 
@@ -48,10 +46,9 @@
 
         <EditText
             android:id="@+id/activityInsertHintAntiguedad"
-            android:hint="@string/introduce_la_antiguedad"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-
+            android:layout_height="wrap_content"
+            android:hint="@string/introduce_la_antiguedad" />
 
     </LinearLayout>
 
@@ -60,10 +57,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/activityInsertLl"
-        android:background="@drawable/bt_redondo"
-        android:gravity="center"
         android:layout_marginStart="100dp"
         android:layout_marginTop="7dp"
+        android:background="@drawable/button_ripple"
+        android:gravity="center"
         android:text="@string/guardar" />
 
     <Button
@@ -74,6 +71,6 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="7dp"
         android:layout_toEndOf="@id/activityInsertBtGuardar"
-        android:background="@drawable/bt_redondo"
+        android:background="@drawable/button_ripple"
         android:text="@string/borrar" />
 </RelativeLayout>

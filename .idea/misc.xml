@@ -5,10 +5,12 @@
       <map>
         <entry key="app/src/main/res/drawable/bt_empleados.xml" value="0.14" />
         <entry key="app/src/main/res/drawable/bt_redondo.xml" value="0.248" />
+        <entry key="app/src/main/res/drawable/button_ripple.xml" value="0.1865" />
         <entry key="app/src/main/res/layout/activity_insert_edit.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/activity_trabajadores.xml" value="0.35625" />
         <entry key="app/src/main/res/layout/list_item_trabajador.xml" value="0.35625" />
+        <entry key="app/src/main/res/layout/list_item_trabajador_data.xml" value="0.33" />
       </map>
     </option>
   </component>

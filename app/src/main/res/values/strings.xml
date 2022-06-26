@@ -5,7 +5,7 @@
     <string name="insertar_trabajador">INSERTAR TRABAJADOR</string>
     <string name="borrar_lista_de_trabajadores">BORRAR LISTA DE TRABAJADORES</string>
     <string name="introduce_el_nombre_a_buscar">Introduce el nombre a buscar</string>
-    <string name="buscar_por_nombre">BUSCAR POR NOMBRE</string>
+    <string name="buscar_por_nombre">BUSCAR</string>
 
     <!-- ACTIVITY INSERT EDIT. -->
     <string name="nombre">Nombre:</string>

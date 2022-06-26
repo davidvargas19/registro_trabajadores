@@ -3,16 +3,16 @@ package com.davidvargas.trabajadoresroom.data
 import androidx.room.*
 
 @Dao
-interface TrabajadorD {
+interface TrabajadorDao {
 
     @Insert
-    fun insertTrabajador (trabajador: TrabajadorEntity)
+    fun insertTrabajador(trabajador: TrabajadorEntity)
 
     @Query("SELECT * FROM trabajadores WHERE nombre =:name")
-    fun getWorkerByName(name:String): TrabajadorEntity
+    fun getWorkerByName(name: String): List<TrabajadorEntity>
 
     @Query("SELECT * FROM trabajadores")
-    fun getAllWorkers (): List<TrabajadorEntity>
+    fun getAllWorkers(): List<TrabajadorEntity>
 
     @Query("DELETE FROM trabajadores")
     fun deleteAllWorkers()
