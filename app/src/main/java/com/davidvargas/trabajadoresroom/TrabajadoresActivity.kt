@@ -2,14 +2,13 @@ package com.davidvargas.trabajadoresroom
 
 import android.content.Intent
 import android.os.Bundle
-import android.text.TextWatcher
 import android.view.KeyEvent
 import androidx.appcompat.app.AppCompatActivity
 import com.davidvargas.trabajadoresroom.data.TrabajadorDB
 import com.davidvargas.trabajadoresroom.data.TrabajadorEntity
 import com.davidvargas.trabajadoresroom.databinding.ActivityTrabajadoresBinding
 import kotlinx.android.synthetic.main.activity_trabajadores.*
-import kotlinx.android.synthetic.main.activity_trabajadores.view.*
+
 
 class TrabajadoresActivity : AppCompatActivity(), TrabajadorAdapter.OnTrabajadorAdapter {
 
@@ -25,9 +24,9 @@ class TrabajadoresActivity : AppCompatActivity(), TrabajadorAdapter.OnTrabajador
         binding.litBtBuscar.setOnClickListener {
             buscar()
         }
-        binding.litHintBuscar.editableText.addTextChangedListener(TextWatcher()
+//        binding.litHintBuscar.editableText.addTextChangedListener(TextWatcher()
 
-        )
+
 
         setContentView(binding.root)
         setupRecyclerView()
